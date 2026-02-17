@@ -19,7 +19,8 @@ const App = () => {
   const [sortBy, setSortBy] = useState('id');
   const [filterType, setFilterType] = useState('all');
 
-  const API_BASE_URL = process.env.REACT_APP_URL_DEVELOPMENT || 'http://localhost:8000';
+  // const API_BASE_URL = process.env.REACT_APP_URL_DEVELOPMENT || 'http://localhost:8080';
+  const API_BASE_URL = 'http://localhost:8080';
 
   // Función para obtener todos los Pokémon
   const fetchPokemons = useCallback(async () => {

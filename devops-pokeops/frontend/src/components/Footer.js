@@ -34,7 +34,7 @@ const Footer = () => {
     }
   ];
 
-  const currentDay = Math.floor((Date.now() - new Date('2025-06-07').getTime()) / (1000 * 60 * 60 * 24)) + 1;
+  const currentDay = Math.floor((Date.now() - new Date('2026-02-17').getTime()) / (1000 * 60 * 60 * 24)) + 1;
 
   return (
     <footer className="footer">
