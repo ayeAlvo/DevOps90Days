@@ -45,21 +45,14 @@ rm -rf "$TEMP_DIR"
 echo "✅ Listo! Se importó la rama '$RAMA' en: $DESTINO"
 
 if [ "$FLAG" == "--commit" ]; then
-    echo "🔄 Realizando commit y push..."
+    echo "🔄 Realizando commit..."
 
     cd "$MI_REPO" || exit 1
 
     git add "$RAMA"\
     git commit -m "Importo rama $RAMA del repo devops-static-web" || echo "ℹ️ No había cambios para commitear."
 
-    echo "📤 Haciendo push..."
-    if git push 2>/dev/null; then
-        echo "🚀 Cambios subidos a GitHub."
-    else
-        echo "⚠️ No se pudo hacer push."
-        echo "   Posible motivo: GitHub ahora exige Token Personal o SSH."
-        echo "   👉 Configurá un token o clave SSH y volvé a intentar."
-    fi
+    echo "📤 Falta hacer push..."
 else
     echo "📌 Subir los cambios manualmente."
 fi
