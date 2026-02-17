@@ -49,7 +49,7 @@ if [ "$FLAG" == "--commit" ]; then
 
     cd "$MI_REPO" || exit 1
 
-    git add "$RAMA"
+    git add "$RAMA"\
     git commit -m "Importo rama $RAMA del repo devops-static-web" || echo "ℹ️ No había cambios para commitear."
 
     echo "📤 Haciendo push..."
