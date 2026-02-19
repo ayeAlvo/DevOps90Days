@@ -1,0 +1,37 @@
+# ============================================
+# 🔥 DevOps PokeOps - .gitignore completo
+# ============================================
+
+# --- Node / React ---
+frontend/node_modules/
+frontend/build/
+frontend/.cache/
+frontend/.env
+
+# --- Backend Python ---
+backend/__pycache__/
+backend/*.pyc
+backend/.pytest_cache/
+backend/.env
+backend/.vscode/
+pokemon-env/
+venv/
+
+# --- Logs ---
+logs/
+*.log
+/home/vagrant/logs/
+
+# --- Sistema / Vagrant ---
+.vagrant/
+*.box
+*.swp
+
+# --- Nginx configs generados automáticamente (si se crean) ---
+/etc/nginx/sites-enabled/*
+/etc/nginx/sites-available/*
+
+# --- Otros ---
+.DS_Store
+*.tmp
+*.bak
