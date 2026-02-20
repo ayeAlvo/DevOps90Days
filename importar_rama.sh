@@ -3,7 +3,7 @@
 REPO_ORIGEN="https://github.com/roxsross/devops-static-web.git"
 RAMA="$1"
 FLAG="$2"
-MI_REPO="$HOME/Documentos/myRepos/DevOps90Days"
+MI_REPO="$HOME/Documents/myRepos/DevOps90Days"
 DESTINO="$MI_REPO/$RAMA"
 TEMP_DIR="/tmp/devops-temp-$$"
 
