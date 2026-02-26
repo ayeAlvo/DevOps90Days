@@ -14,20 +14,18 @@ Este repositorio contiene dos componentes principales:
 ## 📁 Estructura del repositorio
 DevOps90Days/
 │
-├── copy-branch.sh # Script para copiar/actualizar una rama específica
+├── importar_rama.sh # Script para copiar/actualizar una rama específica
 │
 └── devops-pokeops/ # Proyecto 1
-├── .gitignore # Ignora archivos específicos de este proyecto
-├── backend
-├── frontend
+├── booklibrary/    # proyecto 2
 └── ...
 
 
 ## 🚀 Scripts incluidos
 
-### `copy-branch.sh`
+### `importar-rama.sh`
 Script para clonar, actualizar o copiar una rama específica del proyecto.  
 Ejemplo de uso:
 
 ```bash
-./copy-branch.sh main
+./importar_rama.sh main
