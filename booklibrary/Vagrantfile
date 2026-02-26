@@ -1,0 +1,21 @@
+Vagrant.configure("2") do |config|
+  # BOX ARM64 QUE YA TE FUNCIONÓ
+  config.vm.box = "bento/ubuntu-22.04"
+  config.vm.box_version = "202502.21.0"
+
+  # RED OPCIONAL
+  config.vm.network "private_network", ip: "192.168.56.10"
+
+  # VIRTUALBOX ARM SETTINGS
+  config.vm.provider "virtualbox" do |vb|
+    vb.name = "booklibrary-arm64"
+    vb.memory = "2048"
+    vb.cpus = 2
+
+    # Fuerza ARM64 (solo por seguridad extra)
+    vb.customize ["modifyvm", :id, "--cpu-profile", "apple-m1"]
+  end
+
+  # SYNC FOLDER
+  config.vm.synced_folder ".", "/vagrant"
+end

@@ -1,0 +1,38 @@
+# Entorno virtual
+venv/
+ENV/
+env/
+
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# SQLite DB (si no querés subirla)
+data.sqlite
+
+# Logs
+*.log
+logs_despliegue.txt
+
+# Gunicorn control socket
+gunicorn.ctl
+
+# Archivos de Vagrant
+.vagrant/
+*.box
+
+# Archivos temporales / caché
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Configs de Nginx generadas
+/etc/nginx/sites-available/booklibrary
+/etc/nginx/sites-enabled/booklibrary
+
+# Archivos generados por el sistema
+.DS_Store
+Thumbs.db
