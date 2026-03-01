@@ -1,0 +1,75 @@
+---
+- hosts: all
+  become: yes
+
+  tasks:
+    - name: Actualizar repos
+      apt:
+        update_cache: yes
+
+    - name: Instalar Nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Crear carpeta del sitio
+      file:
+        path: /var/www/freelancer
+        state: directory
+        mode: '0755'
+
+    - name: Copiar contenido del sitio
+      copy:
+        src: site/
+        dest: /var/www/freelancer/
+        owner: www-data
+        group: www-data
+        mode: '0644'
+
+    - name: Crear configuracion de Nginx
+      copy:
+        dest: /etc/nginx/sites-available/freelancer
+        content: |
+          server {
+              listen 80;
+              server_name _;
+
+              root /var/www/freelancer;
+              index index.html;
+
+              location / {
+                  try_files $uri $uri/ /index.html;
+              }
+
+              location /assets/ {
+                  alias /var/www/freelancer/assets/;
+              }
+
+              location /img/ {
+                  alias /var/www/freelancer/img/;
+              }
+
+              location /portfolio/ {
+                  alias /var/www/freelancer/portfolio/;
+              }
+          }
+
+    - name: Habilitar sitio en Nginx
+      file:
+        src: /etc/nginx/sites-available/freelancer
+        dest: /etc/nginx/sites-enabled/freelancer
+        state: link
+        force: yes
+
+    - name: Deshabilitar sitio por defecto
+      file:
+        path: /etc/nginx/sites-enabled/default
+        state: absent
+
+    - name: Validar configuración de Nginx
+      command: nginx -t
+
+    - name: Recargar Nginx
+      service:
+        name: nginx
+        state: restarted
