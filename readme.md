@@ -15,16 +15,16 @@ Este repositorio contiene dos componentes principales:
 ```
 DevOps90Days/
 │
-├── importar_rama.sh          
+├── 🛠️ importar_rama.sh          
 │   └── Script para importar Ramas sin clonar .git
 │
-├── devops-pokeops/           
+├── 🎮 devops-pokeops/           
 │   └── Proyecto 1 — PokéAPI + Flask
 │
-├── booklibrary/              
+├── 📚 booklibrary/              
 │   └── Proyecto 2 — Biblioteca + Gunicorn + Nginx
 │
-└── freelancer-deploy/        
+└── 🖥️ freelancer-deploy/        
     └── Proyecto 3 — StartBootstrap + Nginx + Ansible + Vagrant
 ```
 
