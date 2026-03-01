@@ -11,15 +11,22 @@ Este repositorio contiene dos componentes principales:
 
 ---
 
-## 📁 Estructura del repositorio
+## 📂 Estructura del Repositorio DevOps90Days
+```
 DevOps90Days/
 │
-├── importar_rama.sh # Script para copiar/actualizar una rama específica
+├── importar_rama.sh          
+│   └── Script para importar Ramas sin clonar .git
 │
-└── devops-pokeops/ # Proyecto 1
-├── booklibrary/    # proyecto 2
-└── ...
-
+├── devops-pokeops/           
+│   └── Proyecto 1 — PokéAPI + Flask
+│
+├── booklibrary/              
+│   └── Proyecto 2 — Biblioteca + Gunicorn + Nginx
+│
+└── freelancer-deploy/        
+    └── Proyecto 3 — StartBootstrap + Nginx + Ansible + Vagrant
+```
 
 ## 🚀 Scripts incluidos
 
