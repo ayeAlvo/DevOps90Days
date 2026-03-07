@@ -1,6 +1,26 @@
 
 # 🚀 90 Días de DevOps con Roxs
 
+## Deploy with Ansible
+
+This playbook installs Docker, clones the repository and deploys the voting app using Docker Compose.
+
+Requirements:
+- Ubuntu / Debian server
+- Ansible installed
+
+Run:
+
+ansible-playbook -i inventory.ini deploy.yml -K
+
+This playbook will:
+- Install Docker
+- Install Docker Compose
+- Clone the repository
+- Deploy the voting app using Docker Compose
+
+Note:
+This playbook uses `apt`, so it will not work on macOS or Windows hosts.
 
 
 ## 📸 Screenshots del Ecosistema voting
