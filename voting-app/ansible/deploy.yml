@@ -2,6 +2,11 @@
   hosts: local
   become: yes
 
+  vars:
+    repo_url: https://github.com/ayeAlvo/DevOps90Days.git
+    project_path: /opt/devops90days
+    app_path: "{{ project_path }}/voting-app"
+
   tasks:
 
     - name: Install docker
@@ -17,14 +22,14 @@
 
     - name: Clone project repo
       git:
-        repo: https://github.com/ayeAlvo/DevOps90Days.git
-        dest: /opt/devops90days
+        repo: "{{ repo_url }}"
+        dest: "{{ project_path }}"
         update: yes
 
     - name: Start voting app
       command: docker compose up -d
       args:
-        chdir: /opt/devops90days/voting-app
+        chdir: "{{ app_path }}"
 
     - name: Show running containers
       command: docker ps
