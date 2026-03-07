@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+
+  vote:
+    build: ./vote
+    ports:
+      - "8080:80"
+    environment:
+      REDIS_HOST: redis
+      DATABASE_HOST: database
+      DATABASE_USER: postgres
+      DATABASE_PASSWORD: postgres
+      DATABASE_NAME: votes
+    depends_on:
+      - redis
+      - database
+
+  redis:
+    image: redis:7
+
+  database:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: votes
