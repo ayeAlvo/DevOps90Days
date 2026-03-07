@@ -1,0 +1,121 @@
+{
+  "portfolio": {
+    "name": "Aye Onfire",
+    "title": "DevOps Engineer",
+    "subtitle": "Cloud Infrastructure | Automation",
+    "description": "Especialista en diseño, implementación y gestión de infraestructuras en la nube. Apasionada por la automatización y la excelencia técnica.",
+    "email": "aye@onfire.dev",
+    "phone": "+34 600 000 000",
+    "social": {
+      "github": "https://github.com/ayeonfire",
+      "linkedin": "https://linkedin.com/in/ayeonfire",
+      "twitter": "https://twitter.com/ayeonfire"
+    }
+  },
+  "skills": [
+    {
+      "id": 1,
+      "icon": "☁️",
+      "title": "Cloud Platforms",
+      "description": "AWS, Azure, Google Cloud"
+    },
+    {
+      "id": 2,
+      "icon": "🐳",
+      "title": "Containerización",
+      "description": "Docker, Kubernetes, OpenShift"
+    },
+    {
+      "id": 3,
+      "icon": "⚙️",
+      "title": "CI/CD",
+      "description": "Jenkins, GitLab CI, GitHub Actions"
+    },
+    {
+      "id": 4,
+      "icon": "📊",
+      "title": "Monitoring",
+      "description": "Prometheus, Grafana, ELK Stack"
+    },
+    {
+      "id": 5,
+      "icon": "🔐",
+      "title": "Security",
+      "description": "SSL/TLS, IAM, Vault"
+    },
+    {
+      "id": 6,
+      "icon": "🐧",
+      "title": "Linux",
+      "description": "Ubuntu, CentOS, Debian"
+    },
+    {
+      "id": 7,
+      "icon": "📝",
+      "title": "IaC",
+      "description": "Terraform, Ansible, CloudFormation"
+    },
+    {
+      "id": 8,
+      "icon": "🔧",
+      "title": "Scripting",
+      "description": "Bash, Python, Go"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Automatización de Kubernetes",
+      "description": "Implementación de cluster Kubernetes con alta disponibilidad, auto-scaling y monitoreo completo.",
+      "image": "images/project1.jpg",
+      "placeholder": "Kubernetes Deployment",
+      "gradient": "#667eea",
+      "tags": ["Kubernetes", "Docker", "Helm"]
+    },
+    {
+      "id": 2,
+      "title": "Pipeline CI/CD Automatizado",
+      "description": "Configuración de pipeline completo con testing automático, build y deployment a producción.",
+      "image": "images/project2.jpg",
+      "placeholder": "CI/CD Pipeline",
+      "gradient": "#f093fb",
+      "tags": ["GitLab CI", "Jenkins", "AWS"]
+    },
+    {
+      "id": 3,
+      "title": "Infraestructura en la Nube",
+      "description": "Diseño e implementación de infraestructura escalable en AWS con IaC usando Terraform.",
+      "image": "images/project3.jpg",
+      "placeholder": "Cloud Infrastructure",
+      "gradient": "#4facfe",
+      "tags": ["AWS", "Terraform", "IaC"]
+    },
+    {
+      "id": 4,
+      "title": "Stack de Monitoreo",
+      "description": "Implementación de Prometheus, Grafana y alertas para monitoreo en tiempo real.",
+      "image": "images/project4.jpg",
+      "placeholder": "Monitoring Stack",
+      "gradient": "#43e97b",
+      "tags": ["Prometheus", "Grafana", "Alerting"]
+    },
+    {
+      "id": 5,
+      "title": "Automatización de Seguridad",
+      "description": "Implementación de escaneo de vulnerabilidades, compliance checks y remediation automática.",
+      "image": "images/project5.jpg",
+      "placeholder": "Security Automation",
+      "gradient": "#fa7343",
+      "tags": ["Security", "Scanning", "Automation"]
+    },
+    {
+      "id": 6,
+      "title": "Plan de Recuperación",
+      "description": "Estrategia de backup y disaster recovery con RTO/RPO optimizados.",
+      "image": "images/project6.jpg",
+      "placeholder": "Disaster Recovery",
+      "gradient": "#33ccff",
+      "tags": ["Backup", "Recovery", "DR"]
+    }
+  ]
+}

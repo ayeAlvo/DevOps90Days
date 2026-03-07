@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio profesional de Aye Onfire - Especialista DevOps">
+    <meta name="keywords" content="DevOps, Cloud, Docker, Kubernetes, CI/CD">
+    <title>Aye Onfire - DevOps Engineer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <div class="logo">
+                <span class="logo-text">Aye Onfire</span>
+                <span class="logo-badge">DevOps</span>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                <span class="icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Aye Onfire</h1>
+                <p class="hero-subtitle">DevOps Engineer | Cloud Infrastructure | Automation</p>
+                <p class="hero-description">
+                    Especialista en diseño, implementación y gestión de infraestructuras en la nube. 
+                    Apasionada por la automatización y la excelencia técnica.
+                </p>
+                <div class="hero-cta">
+                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contacto" class="btn btn-secondary">Contáctame</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-box box1"></div>
+                <div class="floating-box box2"></div>
+                <div class="floating-box box3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acerca de -->
+    <section id="acerca" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Acerca de Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Soy una ingeniera DevOps apasionada por optimizar procesos, mejorar la calidad 
+                        del código y construir infraestructuras escalables y confiables.
+                    </p>
+                    <p>
+                        Con experiencia en herramientas modernas de cloud computing, contenedorización 
+                        y orquestación, me dedico a automatizar todo lo que sea posible.
+                    </p>
+                    <p>
+                        Mi objetivo es crear puentes entre desarrollo y operaciones, garantizando 
+                        deployments rápidos, seguros y eficientes.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 
+.405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.001 12.001 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 002.856-10.86 10.002 10.002 0 01-2.8.856 4.996 4.996 0 00-8.689 3.75c0 .39.045.765.144 1.124A14.05 14.05 0 012.58 2.405a5.001 5.001 0 001.548 6.681 4.987 4.987 0 01-2.26-.616v.06a5 5 0 004.008 4.9 4.993 4.993 0 002.261.055 5.007 5.007 0 004.677 3.477 10.01 10.01 0 01-6.177 2.13c-.39 0-.773-.022-1.148-.067a14.047 14.047 0 007.618 2.232c9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.56 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">☁️</div>
+                    <h3>Cloud Platforms</h3>
+                    <p>AWS, Azure, Google Cloud</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🐳</div>
+                    <h3>Containerización</h3>
+                    <p>Docker, Kubernetes, OpenShift</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>CI/CD</h3>
+                    <p>Jenkins, GitLab CI, GitHub Actions</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📊</div>
+                    <h3>Monitoring</h3>
+                    <p>Prometheus, Grafana, ELK Stack</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔐</div>
+                    <h3>Security</h3>
+                    <p>SSL/TLS, IAM, Vault</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🐧</div>
+                    <h3>Linux</h3>
+                    <p>Ubuntu, CentOS, Debian</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📝</div>
+                    <h3>IaC</h3>
+                    <p>Terraform, Ansible, CloudFormation</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Scripting</h3>
+                    <p>Bash, Python, Go</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect fill='%23667eea' width='400' height='250'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em'%3EKubernetes Deployment%3C/text%3E%3C/svg%3E" alt="Kubernetes Deployment" class="lazy-image" data-src="images/project1.jpg">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Automatización de Kubernetes</h3>
+                        <p>Implementación de cluster Kubernetes con alta disponibilidad, auto-scaling y monitoreo completo.</p>
+                        <div class="project-tags">
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Helm</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect fill='%23f093fb' width='400' height='250'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em'%3ECI/CD Pipeline%3C/text%3E%3C/svg%3E" alt="CI/CD Pipeline" class="lazy-image" data-src="images/project2.jpg">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Pipeline CI/CD Automatizado</h3>
+                        <p>Configuración de pipeline completo con testing automático, build y deployment a producción.</p>
+                        <div class="project-tags">
+                            <span class="tag">GitLab CI</span>
+                            <span class="tag">Jenkins</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect fill='%234facfe' width='400' height='250'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em'%3ECloud Infrastructure%3C/text%3E%3C/svg%3E" alt="Cloud Infrastructure" class="lazy-image" data-src="images/project3.jpg">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Infraestructura en la Nube</h3>
+                        <p>Diseño y implementación de infraestructura escalable en AWS con IaC usando Terraform.</p>
+                        <div class="project-tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">Terraform</span>
+                            <span class="tag">IaC</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect fill='%2343e97b' width='400' height='250'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em'%3EMonitoring Stack%3C/text%3E%3C/svg%3E" alt="Monitoring Stack" class="lazy-image" data-src="images/project4.jpg">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Stack de Monitoreo</h3>
+                        <p>Implementación de Prometheus, Grafana y alertas para monitoreo en tiempo real.</p>
+                        <div class="project-tags">
+                            <span class="tag">Prometheus</span>
+                            <span class="tag">Grafana</span>
+                            <span class="tag">Alerting</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect fill='%23fa7343' width='400' height='250'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em'%3ESecurityAutomation%3C/text%3E%3C/svg%3E" alt="Security Automation" class="lazy-image" data-src="images/project5.jpg">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Automatización de Seguridad</h3>
+                        <p>Implementación de escaneo de vulnerabilidades, compliance checks y remediation automática.</p>
+                        <div class="project-tags">
+                            <span class="tag">Security</span>
+                            <span class="tag">Scanning</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250'%3E%3Crect fill='%2333ccff' width='400' height='250'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dy='.3em'%3EDisaster Recovery%3C/text%3E%3C/svg%3E" alt="Disaster Recovery" class="lazy-image" data-src="images/project6.jpg">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Plan de Recuperación</h3>
+                        <p>Estrategia de backup y disaster recovery con RTO/RPO optimizados.</p>
+                        <div class="project-tags">
+                            <span class="tag">Backup</span>
+                            <span class="tag">Recovery</span>
+                            <span class="tag">DR</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Ponte en Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>¿Interesado en colaborar?</h3>
+                    <p>Estoy siempre abierta a nuevas oportunidades y proyectos desafiantes.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="method-icon">📧</span>
+                            <a href="mailto:aye@onfire.dev">aye@onfire.dev</a>
+                        </div>
+                        <div class="contact-method">
+                            <span class="method-icon">📱</span>
+                            <a href="tel:+34600000000">+34 600 000 000</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <span class="error-message" id="errorNombre"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="errorEmail"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <input type="text" id="asunto" name="asunto" required>
+                        <span class="error-message" id="errorAsunto"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        <span class="error-message" id="errorMensaje"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">Enviar Mensaje</button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Aye Onfire. Todos los derechos reservados.</p>
+            <p class="footer-accent">Crafted with ❤️ and DevOps magic</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

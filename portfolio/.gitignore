@@ -1,0 +1,36 @@
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node (si usas herramientas)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Deployment
+dist/
+build/
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Backups
+*.bak
+*.backup
+
+# Archivos temporales
+*.tmp
+.temp/
