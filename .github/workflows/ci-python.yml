@@ -20,19 +20,19 @@ jobs:
         python-version: '3.11'
 
     - name: Instalar dependencias
-      run: |
-        pip install -r 3er_semana/mi-app-python/requirements.txt
+      working-directory: 3er_semana/mi-app-python
+      run: pip install -r requirements.txt
 
     - name: Ejecutar tests
-      run: |
-        pytest tests/ -v 3er_semana/mi-app-python/tests/
+      working-directory: 3er_semana/mi-app-python
+      run: pytest tests/ -v
 
     - name: Ejecutar con cobertura
-      run: |
-        pytest --cov=app --cov-report=term --cov-report=html
+      working-directory: 3er_semana/mi-app-python
+      run: pytest --cov=app --cov-report=term --cov-report=html
 
     - name: Guardar reporte
       uses: actions/upload-artifact@v4
       with:
         name: coverage-report
-        path: htmlcov/
+        path: 3er_semana/mi-app-python/htmlcov/
