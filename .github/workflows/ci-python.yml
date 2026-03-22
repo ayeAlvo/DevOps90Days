@@ -25,7 +25,7 @@ jobs:
 
     - name: Ejecutar tests
       run: |
-        pytest tests/ -v
+        pytest tests/ -v 3er_semana/mi-app-python/tests/
 
     - name: Ejecutar con cobertura
       run: |
