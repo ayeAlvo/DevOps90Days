@@ -1,0 +1,13 @@
+name: Matrices DevOps
+
+on: [push, workflow_dispatch]
+
+jobs:
+  probar-versiones:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: [10, 12, 14]
+    steps:
+      - name: Mostrar versión actual
+        run: echo "Probando versión ${{ matrix.version }}"
