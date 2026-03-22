@@ -21,10 +21,6 @@ def test_suma(client):
     r = client.get('/suma/3/4')
     assert json.loads(r.data)['resultado'] == 7
 
-# def test_saludo(client):
-#     r = client.get('/saludo/Rox')
-#     assert '¡Hola Rox!' in r.get_data(as_text=True)
-
 def test_saludo(client):
     r = client.get('/saludo/Rox')
     data = json.loads(r.data)  # convertir JSON a diccionario
