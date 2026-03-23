@@ -1,0 +1,26 @@
+name: Deploy App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Stop previous containers
+        run: docker compose down || true
+
+      - name: Pull/build images
+        run: docker compose build --no-cache
+
+      - name: Start stack
+        run: docker compose up -d
+
+      - name: Healthcheck app
+        run: curl -f http://localhost/health
