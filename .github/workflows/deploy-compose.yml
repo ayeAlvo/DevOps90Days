@@ -1,0 +1,37 @@
+name: Deploy con Docker Compose
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, linux, rox]
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Ir a carpeta del proyecto
+      run: cd 3er_semana/deploy-w-github-action/mi-app
+
+    - name: Stop previo
+      run: |
+        cd 3er_semana/deploy-w-github-action/mi-app
+        docker compose down -v || true
+
+    - name: Build
+      run: |
+        cd 3er_semana/deploy-w-github-action/mi-app
+        docker compose build
+
+    - name: Up
+      run: |
+        cd 3er_semana/deploy-w-github-action/mi-app
+        docker compose up -d
+
+    - name: Healthcheck
+      run: |
+        sleep 10
+        curl -f http://localhost/health
