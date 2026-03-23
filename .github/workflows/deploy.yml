@@ -2,25 +2,30 @@ name: Deploy App
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: self-hosted
 
+    defaults:
+      run:
+        working-directory: 3er_semana/deploy-w-github-action/mi-app
+
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Stop previous containers
+      - name: Stop containers
         run: docker compose down || true
 
-      - name: Pull/build images
+      - name: Build
         run: docker compose build --no-cache
 
-      - name: Start stack
+      - name: Up
         run: docker compose up -d
 
-      - name: Healthcheck app
-        run: curl -f http://localhost/health
+      - name: Healthcheck
+        run: |
+          sleep 10
+          curl -f http://localhost/health
