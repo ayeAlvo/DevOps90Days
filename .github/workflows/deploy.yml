@@ -6,26 +6,32 @@ on:
 
 jobs:
   deploy:
-    runs-on: self-hosted
-
-    defaults:
-      run:
-        working-directory: 3er_semana/deploy-w-github-action/mi-app
+    runs-on:
+      - self-hosted
+      - macOS
+      - ARM64
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set working directory
+        run: cd 3er_semana/deploy-w-github-action/mi-app
+
       - name: Stop containers
+        working-directory: 3er_semana/deploy-w-github-action/mi-app
         run: docker compose down || true
 
       - name: Build
+        working-directory: 3er_semana/deploy-w-github-action/mi-app
         run: docker compose build --no-cache
 
       - name: Up
+        working-directory: 3er_semana/deploy-w-github-action/mi-app
         run: docker compose up -d
 
       - name: Healthcheck
+        working-directory: 3er_semana/deploy-w-github-action/mi-app
         run: |
           sleep 10
           curl -f http://localhost/health
