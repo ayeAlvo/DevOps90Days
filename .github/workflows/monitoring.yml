@@ -1,0 +1,15 @@
+name: Monitoring
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: self-hosted
+
+    steps:
+      - name: Check app
+        run: |
+          curl -f http://YOUR_PUBLIC_URL/health
